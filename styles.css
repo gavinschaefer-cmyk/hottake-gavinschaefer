@@ -23,9 +23,12 @@
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
-  /* --color-primary: #______; */
-  /* --color-primary-content: #______; */
-  /* --color-accent: #______; */
+  --color-primary: #F18805; 
+   --color-accent: #CE4B27; 
+  --color-black: #05080F; 
+  --color-white: #FFFFFF;
+  --color-gold: #FDC149;
+  --color-orange: #F19504;
 }
 
 /* TYPE
