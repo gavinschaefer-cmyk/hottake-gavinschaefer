@@ -23,14 +23,21 @@
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
-  --color-primary: #F18805; 
-   --color-accent: #CE4B27; 
-  --color-black: #05080F; 
-  --color-white: #FFFFFF;
-  --color-gold: #FDC149;
-  --color-orange: #F19504;
+  --color-primary: #f13a4f; 
+   --color-accent: #8D99AE; 
+  --color-lightred: #D90429; 
+  --color-white: #f7dae3;
+  --color-darkblue: #6068c4;
 }
 
+.hero{
+  background-image: url("https://minuman.com/cdn/shop/articles/The-Splendid-Story-of-the-Shirley-Temple-Drink.jpg?v=1745306933");
+}
+
+.hero h1 {
+  text-shadow: 2px 2px 10px rgb(237, 46, 46); 
+ color:var(--color-white)
+}
 /* TYPE
  *
  * Two faces: one for headings, chosen for tone; one for body, chosen for
