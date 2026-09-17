@@ -6,127 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Hot Take</title>
 
-  <!--
-      THE THREE TAGS. Tailwind and daisyUI, no build step, nothing installed.
-      Open this file with Live Server and start working.
-
-      Two honest notes:
-        1. The last tag is Tailwind's BROWSER build. Tailwind's own docs say it
-           is "designed for development purposes only, and is not intended for
-           production." That is fine for now. Unit 8 replaces it with a real
-           built stylesheet, because publishing to a public address is where
-           "development only" stops being acceptable.
-        2. These load from jsdelivr, which means jsdelivr sees a request from
-           every reader of your site. That is your call to make on your own
-           project. Read Unit 8's "what a page costs its reader" before you
-           decide it does not matter.
-    -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- Your own rules go last, so they win. See styles.css. -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 
 <body class="bg-base-100 text-base-content">
-  <div class="hero min-h-screen">    
+  <div class="hero min-h-screen">
     <div class="hero-overlay"></div>
     <div class="hero-content text-neutral-content text-center">
       <div class="max-w-md">
         <h1 class="mb-5 text-5xl font-bold">Shirley Temple is the best soda</h1>
         <p class="mb-5">
-          The cherry syrup paired with the sprite with a cherry on top makes the Shirley Temple the best soda 
+          The cherry syrup paired with the sprite with a cherry on top makes the Shirley Temple the best soda
         </p>
-        <button class="btn btn-primary">Get Started</button>
+       <a class="btn btn-primary" href="" target="_blank">Start Sippin</a>
       </div>
     </div>
-  </div>
+  </div> <!--end hero -->
 
-  <div class="container">
-    <div class="row columns-3">
-      <div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
+  <!--feature breakout -->
+  <div class="max-w-5xl mx-auto my-8" id="breakout">
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+
+      <!--Card 1 -->
+      <div class="card bg-base-100  shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/28/61/15/0b/welcome-to-nba-courtside.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Resturant Drink</h2>
+          <p>If you ever go to a resturant this is the first thing you should order a nice refreshing drink called the Shirley temple.</p>
+          <div class="card-actions">
+                   <a class="btn btn-primary" href="" target="start">See Drink</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!--Card2 -->
+      <div class="card bg-base-100  shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://i.kym-cdn.com/entries/icons/original/000/056/294/Untitled-1.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Cherry On Top</h2>
+          <p>The last thing you have when finishing a Shirley Temple is the cherry thats what makes it so good a nice cherry on top</p>
+          <div class="card-actions">
+                <a class="btn btn-primary" href="" target="start">Place it </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!--Card3 -->
+      <div class="card bg-base-100  shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://www.favfamilyrecipes.com/wp-content/uploads/2023/10/Shirley-Temple-Recipe-ingredients.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">The Combo</h2>
+          <p>This is the how to make a Shirley temple very short and easy only need 3 ingredients to make</p>
+          <div class="card-actions">
+            <button class="btn btn-primary" href="#breakout">How too</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
-<div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-<div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
+  </div> <!-- end feature breakout  -->
 
-    </div>
-  </div>
 
-  <!--
-      SWAP THE TAKE FOR YOUR OWN BEFORE STAGE TWO. Every stage from here builds
-      on this page, and it is far easier to judge a design when the words are
-      ones you actually mean.
-    -->
-
-  <!--
-      STAGE TWO — the argument, in three cards.
-      Container, row, columns. Decide the whole first, then divide it. Three
-      reasons, side by side, each one a daisyUI card.
-
-      Build it here.
-    -->
-
-  <!--
-      STAGE THREE — make it survive a phone.
-      Three columns on a laptop is one unreadable column-and-a-bit on a phone.
-      Start from the phone case and add the wide case back with a breakpoint
-      prefix. Check 380, 768 and full width before you call it done.
-
-      This stage edits stage two rather than adding to it.
-    -->
-
-  <!--
-      STAGE FOUR — one media query, written by hand.
-      The prefixes are a convenience over ordinary CSS. Write one yourself once,
-      in styles.css, so the prefix stops being magic.
-    -->
-
-  <!--
-      FOOTER. Your name, and the credits.
-      Every image you add needs its creator, its source and its licence
-      recorded here. If you cannot write that line, you do not know whether you
-      are allowed to use the image.
-    -->
 </body>
 
 </html>

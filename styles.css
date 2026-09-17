@@ -23,7 +23,7 @@
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
-  --color-primary: #f13a4f; 
+  --color-primary: #a7edef; 
    --color-accent: #8D99AE; 
   --color-lightred: #D90429; 
   --color-white: #f7dae3;
@@ -32,6 +32,10 @@
 
 .hero{
   background-image: url("https://minuman.com/cdn/shop/articles/The-Splendid-Story-of-the-Shirley-Temple-Drink.jpg?v=1745306933");
+}
+
+body {
+  background-color:#f7dae3;
 }
 
 .hero h1 {
